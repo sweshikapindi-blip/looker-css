@@ -1,284 +1,167 @@
-/* ================================================
-   HOTSPEX MEDIA - REPORT TABLE CUSTOM DV360 THEME
-   ================================================ */
+/* ===========================================================
+   HOTSPEX MEDIA - DV360 GREEN THEME (A8E6B8 palette)
+   =========================================================== */
+
 /* Main Table Container */
 .report-table-vis {
-  font-family: Roboto, "Noto Sans", "Noto Sans JP", "Noto Sans CJK KR", "Noto Sans Arabic UI",
-    "Noto Sans Devanagari UI", "Noto Sans Hebrew", "Noto Sans Thai UI", Helvetica, Arial, sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 13px;
-  color: #1A1A1A;
-  background-color: #FFFFFF;
+  color: #1a1a1a;
+  background-color: #ffffff;
   border-collapse: collapse;
   width: 100%;
 }
+
 /* Table Wrapper */
 .report-table-wrap {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
   overflow: hidden;
 }
-/* ================================================
-   HEADER STYLES — UPDATED TO GREEN + SENTENCE CASE
-   ================================================ */
-/* Primary Header Row */
+
+/* ===========================================================
+   HEADER STYLES — Converted to DV360 Green Palette
+   =========================================================== */
+
 .report-table-vis thead th {
-  background: linear-gradient(180deg, #E6F4EA 0%, #D3ECD9 100%);
-  color: #1A1A1A;
+  background: linear-gradient(180deg, #3FA46A 0%, #2C7A4B 100%);
+  color: #ffffff;
   font-weight: 600;
   font-size: 12px;
-  text-transform: none;
-  letter-spacing: 0.2px;
+  text-transform: capitalize;
   padding: 14px 12px;
   text-align: left;
-  border-bottom: 2px solid #A8D5BA;
-  border-right: 1px solid rgba(0, 0, 0, 0.05);
-  white-space: nowrap;
+  border-bottom: 2px solid #2C7A4B;
+  border-right: 1px solid rgba(255,255,255,0.15);
 }
-/* Header Group Row */
+
+/* Header Row Group */
 .report-table-vis .header-row th {
-  background: linear-gradient(180deg, #D3ECD9 0%, #C3E4CC 100%);
-  color: #1A1A1A;
+  background: linear-gradient(180deg, #2C7A4B 0%, #3FA46A 100%);
+  color: #ffffff;
   font-weight: 700;
   font-size: 13px;
-  text-transform: none;
-  letter-spacing: 0.3px;
   padding: 16px 12px;
-  border-bottom: 3px solid #66BB6A; /* UPDATED */
-  border-right: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 3px solid #A8E6B8; /* Light DV360 green */
+  border-right: 1px solid rgba(255,255,255,0.25);
 }
-/* Remove right border for last cell */
+
+/* Last Header Remove Border */
 .report-table-vis thead th:last-child,
 .report-table-vis .header-row th:last-child {
   border-right: none;
 }
-/* Sortable header hover */
-.report-table-vis thead th.sortable {
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
+
 .report-table-vis thead th.sortable:hover {
-  background: linear-gradient(180deg, #D8F0DF 0%, #C9E8D4 100%); /* UPDATED */
+  background: linear-gradient(180deg, #4FBF7B 0%, #3FA46A 100%);
 }
-/* ================================================
-   DATA ROWS
-   ================================================ */
+
+/* ===========================================================
+   ROWS & HOVER EFFECT — Updated to green accents
+   =========================================================== */
+
 .report-table-vis tbody tr {
-  border-bottom: 1px solid #E8E8E8;
+  border-bottom: 1px solid #e8e8e8;
   transition: background-color 0.15s ease;
 }
-/* Alternating Row Colors */
+
 .report-table-vis tbody tr:nth-child(even) {
-  background-color: #F8F9FA;
+  background-color: #F3FFF7; /* tinted light green */
 }
+
 .report-table-vis tbody tr:nth-child(odd) {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
-/* Hover Effect */
+
+/* Hover effect */
 .report-table-vis tbody tr:hover {
-  background-color: #E3F2FD !important;
-  box-shadow: inset 0 0 0 1px #90CAF9;
+  background-color: #E0F8E9 !important;
+  box-shadow: inset 0 0 0 1px #A8E6B8;
 }
+
 /* Data Cells */
 .report-table-vis tbody td {
   padding: 12px;
   font-size: 13px;
-  color: #2C3E50;
-  border-right: 1px solid #F0F0F0;
-  vertical-align: middle;
+  color: #2c3e50;
+  border-right: 1px solid #f0f0f0;
 }
-.report-table-vis tbody td:last-child {
-  border-right: none;
-}
-/* ================================================
-   DIMENSION CELLS
-   ================================================ */
-.report-table-vis .dimension-cell {
-  font-weight: 500;
-  color: #34495E;
-  text-align: left;
-}
+
+/* ===========================================================
+   DIMENSION + MEASURE CELLS
+   =========================================================== */
+
 .report-table-vis tbody td:first-child {
   font-weight: 600;
-  color: #2C3E50;
-  background-color: rgba(52, 73, 94, 0.02);
+  color: #1d2b20;
+  background-color: rgba(168, 230, 184, 0.18);
 }
-/* ================================================
-   MEASURE CELLS
-   ================================================ */
+
 .report-table-vis .measure-cell {
   text-align: right;
   font-variant-numeric: tabular-nums;
-  font-size: 13px;
 }
-/* ================================================
+
+/* ===========================================================
    SUBTOTAL ROWS
-   ================================================ */
+   =========================================================== */
+
 .report-table-vis .subtotal-row {
-  background: linear-gradient(180deg, #ECF0F1 0%, #E8EBED 100%) !important;
+  background: linear-gradient(180deg, #E3F9EA 0%, #D2F2DB 100%) !important;
   font-weight: 700;
-  border-top: 2px solid #BDC3C7;
-  border-bottom: 2px solid #BDC3C7;
+  border-top: 2px solid #A8E6B8;
+  border-bottom: 2px solid #A8E6B8;
 }
-.report-table-vis .subtotal-row td {
-  padding: 14px 12px;
-  color: #2C3E50;
-  font-size: 13px;
-}
+
 .report-table-vis .subtotal-row .subtotal-label {
   font-style: italic;
-  color: #5D6D7E;
+  color: #2C7A4B;
 }
-/* ================================================
-   TOTAL ROW — UPDATED TO PLAIN WHITE
-   ================================================ */
+
+/* ===========================================================
+   GRAND TOTAL ROW — DV360 Deep Green
+   =========================================================== */
+
 .report-table-vis .total-row {
-  background: #FFFFFF !important;
-  font-weight: 600;
-  border-top: 1px solid #E0E0E0;
-  border-bottom: 1px solid #E0E0E0;
+  background: linear-gradient(180deg, #2C7A4B 0%, #1E5634 100%) !important;
+  font-weight: 700;
+  border-top: 3px solid #A8E6B8;
+  border-bottom: 3px solid #A8E6B8;
 }
+
 .report-table-vis .total-row td {
-  padding: 14px 12px;
-  color: #2C3E50;
-  font-size: 13px;
-  text-transform: none;
-  letter-spacing: 0;
-  background: #FFFFFF !important;
+  color: #ffffff;
+  padding: 16px 12px;
+  font-size: 14px;
+  text-transform: uppercase;
 }
-/* ================================================
-   CONDITIONAL FORMATTING
-   ================================================ */
+
+/* ===========================================================
+   POSITIVE / NEGATIVE VALUES
+   =========================================================== */
+
 .report-table-vis .positive-value {
-  color: #27AE60;
+  color: #2C7A4B;
   font-weight: 600;
 }
+
 .report-table-vis .negative-value {
-  color: #E74C3C;
+  color: #e74c3c;
   font-weight: 600;
 }
-.report-table-vis .neutral-value {
-  color: #7F8C8D;
-}
-.report-table-vis .variance-positive::before {
-  content: "▲ ";
-  color: #27AE60;
-  font-size: 10px;
-}
-.report-table-vis .variance-negative::before {
-  content: "▼ ";
-  color: #E74C3C;
-  font-size: 10px;
-}
-/* ================================================
-   TRANSPOSED TABLES
-   ================================================ */
-.report-table-vis.transposed tbody tr:first-child td {
-  background: linear-gradient(180deg, #ECF0F1 0%, #E8EBED 100%);
-  font-weight: 600;
-  color: #2C3E50;
-  border-bottom: 2px solid #BDC3C7;
-}
-/* ================================================
-   PIVOT TABLE STYLING
-   ================================================ */
-.report-table-vis .pivot-header {
-  background: linear-gradient(180deg, #5D6D7E 0%, #4A5C6E 100%);
-  color: #FFFFFF;
-  font-weight: 600;
-  text-align: center;
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
-}
-.report-table-vis .pivot-cell {
-  text-align: center;
-  background-color: rgba(236, 240, 241, 0.3);
-}
-/* ================================================
-   SPECIAL FORMATTING
-   ================================================ */
-.report-table-vis .currency {
-  font-variant-numeric: tabular-nums;
-}
-.report-table-vis .percentage::after {
-  content: "%";
-  color: #95A5A6;
-  margin-left: 2px;
-}
-.report-table-vis .highlight {
-  background-color: #FFF9E6 !important;
-  border-left: 3px solid #F39C12;
-  font-weight: 600;
-}
-/* ================================================
-   DRILL-DOWN LINKS
-   ================================================ */
+
+/* ===========================================================
+   DRILLABLE LINKS
+   =========================================================== */
+
 .report-table-vis .drillable-link {
-  color: #3498DB;
-  text-decoration: none;
-  cursor: pointer;
-  border-bottom: 1px dashed #3498DB;
-  transition: all 0.2s ease;
+  color: #2C7A4B;
+  border-bottom: 1px dashed #2C7A4B;
 }
+
 .report-table-vis .drillable-link:hover {
-  color: #2980B9;
-  border-bottom: 1px solid #2980B9;
-  background-color: rgba(52, 152, 219, 0.05);
-}
-/* ================================================
-   RESPONSIVE ADJUSTMENTS
-   ================================================ */
-@media screen and (max-width: 768px) {
-  .report-table-vis {
-    font-size: 11px;
-  }
-  .report-table-vis thead th,
-  .report-table-vis tbody td {
-    padding: 8px 6px;
-  }
-  .report-table-vis .header-row th {
-    padding: 10px 6px;
-  }
-}
-/* ================================================
-   PRINT STYLES
-   ================================================ */
-@media print {
-  .report-table-vis {
-    box-shadow: none;
-    border: 1px solid #BDC3C7;
-  }
-  .report-table-vis tbody tr:hover {
-    background-color: inherit !important;
-    box-shadow: none !important;
-  }
-  .report-table-vis tbody tr:nth-child(even) {
-    background-color: #F5F5F5 !important;
-  }
-}
-/* ================================================
-   EMPTY STATE
-   ================================================ */
-.report-table-vis .no-data {
-  padding: 40px 20px;
-  text-align: center;
-  color: #95A5A6;
-  font-style: italic;
-  background-color: #FAFAFA;
-  border: 2px dashed #E8E8E8;
-}
-/* ================================================
-   LOADING STATE
-   ================================================ */
-.report-table-vis .loading {
-  opacity: 0.5;
-  pointer-events: none;
-}
-.report-table-vis .loading::after {
-  content: "Loading data...";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #34495E;
-  font-weight: 600;
+  color: #1E5634;
+  border-bottom: 1px solid #1E5634;
+  background-color: rgba(44, 122, 75, 0.07);
 }
